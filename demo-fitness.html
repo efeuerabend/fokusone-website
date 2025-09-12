@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Fitnessstudio - FokusOne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Back Button -->
+    <header class="back-nav">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">FokusOne</span>
+                <span class="logo-subtitle">KI-Telefonie & Chatbots für Unternehmen</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <a href="index.html" class="btn-back">Zurück zur Hauptseite</a>
+            </div>
+        </div>
+    </header>
+
+    <section style="padding: 80px 0; background: #f8f9fa;">
+        <div class="container">
+            <h1 style="text-align: center; font-size: 42px; margin-bottom: 20px;">VoiceBot Demo - Fitness Oase</h1>
+            <p style="text-align: center; font-size: 18px; color: #666; margin-bottom: 60px;">
+                Erleben Sie, wie unser VoiceBot aktiv Interessenten anruft und eine Lead-Qualifizierung für ein Probetraining durchführt.
+            </p>
+
+            <!-- Hero Image with Video -->
+            <div style="max-width: 800px; margin: 0 auto 40px; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                <div style="position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 30px;">
+                    <img src="Fitness_Oase_Empfang_KI.jpg" alt="Fitness Oase Empfang mit KI-VoiceBot" style="width: 100%; height: auto; display: block;">
+                    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: #ff6b35; border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);" onclick="playVideo()">
+                        <div style="color: white; font-size: 32px; margin-left: 4px;">▶</div>
+                    </div>
+                </div>
+                
+                <!-- Video Element (initially hidden) -->
+                <video id="demoVideo" style="width: 100%; height: auto; border-radius: 8px; display: none;" controls>
+                    <source src="Anruf_Lead_Probetraining.mp4" type="video/mp4">
+                    Ihr Browser unterstützt das Video-Element nicht.
+                </video>
+                
+                <script>
+                function playVideo() {
+                    const img = document.querySelector('img[src="Fitness_Oase_Empfang_KI.jpg"]').parentElement;
+                    const video = document.getElementById('demoVideo');
+                    
+                    // Hide image container and show video
+                    img.style.display = 'none';
+                    video.style.display = 'block';
+                    
+                    // Start playing the video
+                    video.play();
+                }
+                </script>
+
+                <h3 style="font-size: 24px; margin-bottom: 20px; color: #333;">Szenario: Terminierung für Probetraining mit Einwandbehandlung</h3>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+                    <p style="color: #666; line-height: 1.6;">
+                        Der VoiceBot ruft 5 Minuten nach der Leadgenerierung den Interessenten für ein Probetraining an. 
+                        Er führt eine professionelle Lead-Qualifizierung durch, erfasst die Kontaktdaten und 
+                        vereinbart einen Termin für das kostenlose Probetraining.
+                    </p>
+                </div>
+
+                <h4 style="color: #333; margin-bottom: 15px;">Was der VoiceBot in diesem Gespräch leisten kann:</h4>
+                <ul style="list-style: none; margin-bottom: 30px;">
+                    <li style="margin-bottom: 15px; color: #333; display: flex; align-items: center;">
+                        <span style="color: #ff6b35; margin-right: 10px; font-weight: bold;">✓</span>
+                        Freundliche Begrüßung und Bedarfsermittlung
+                    </li>
+                    <li style="margin-bottom: 15px; color: #333; display: flex; align-items: center;">
+                        <span style="color: #ff6b35; margin-right: 10px; font-weight: bold;">✓</span>
+                        Qualifizierung des Interessenten (Fitnessziele, Erfahrung)
+                    </li>
+
+                    <li style="margin-bottom: 15px; color: #333; display: flex; align-items: center;">
+                        <span style="color: #ff6b35; margin-right: 10px; font-weight: bold;">✓</span>
+                        Terminvereinbarung für kostenloses Probetraining
+                    </li>
+                    <li style="margin-bottom: 15px; color: #333; display: flex; align-items: center;">
+                        <span style="color: #ff6b35; margin-right: 10px; font-weight: bold;">✓</span>
+                        Kontaktdaten erfassen und im CRM speichern
+                    </li>
+                    <li style="margin-bottom: 15px; color: #333; display: flex; align-items: center;">
+                        <span style="color: #ff6b35; margin-right: 10px; font-weight: bold;">✓</span>
+                        Automatische Bestätigungs-SMS versenden
+                    </li>
+                </ul>
+
+                <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">
+                    Jetzt unverbindliches Beratungsgespräch vereinbaren
+                </a>
+            </div>
+
+
+            <!-- Benefits Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <div style="margin-bottom: 20px;">
+                        <img src="Icon_Fitness_Langhantel.png" alt="Fitness Langhantel" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3 style="font-size: 20px; margin-bottom: 15px; color: #333;">Fitness-Expertise</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Speziell für Fitnessstudios trainiert mit Wissen über Trainingsarten, Mitgliedschaften und Gesundheitsaspekte.
+                    </p>
+                </div>
+
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <div style="margin-bottom: 20px;">
+                        <img src="Icon_Skalierung.png" alt="Skalierung" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3 style="font-size: 20px; margin-bottom: 15px; color: #333;">Höhere Conversion</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Durch professionelle Lead-Qualifizierung werden aus mehr Interessenten zahlende Mitglieder.
+                    </p>
+                </div>
+
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <div style="margin-bottom: 20px;">
+                        <img src="Icon_Uhrzeit.png" alt="Uhrzeit" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3 style="font-size: 20px; margin-bottom: 15px; color: #333;">Zeitersparnis</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Ihr Team kann sich auf das Training und die Betreuung der Mitglieder konzentrieren.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); padding: 50px; border-radius: 12px; color: white; text-align: center; margin-top: 60px;">
+                <h2 style="font-size: 32px; margin-bottom: 40px;">Ergebnisse aus der Fitness-Branche</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+                    <div>
+                        <div style="font-size: 48px; font-weight: bold; margin-bottom: 10px;">85%</div>
+                        <p style="font-size: 16px; opacity: 0.9;">Probetraining-Buchungsrate</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; font-weight: bold; margin-bottom: 10px;">40%</div>
+                        <p style="font-size: 16px; opacity: 0.9;">Mehr qualifizierte Leads</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; font-weight: bold; margin-bottom: 10px;">24/7</div>
+                        <p style="font-size: 16px; opacity: 0.9;">Erreichbarkeit für Interessenten</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; font-weight: bold; margin-bottom: 10px;">5 Min</div>
+                        <p style="font-size: 16px; opacity: 0.9;">Durchschnittliche Gesprächsdauer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Steigern Sie Ihre Mitgliederzahlen mit KI</h2>
+            <p>Lassen Sie uns gemeinsam einen VoiceBot für Ihr Fitnessstudio entwickeln, der rund um die Uhr neue Mitglieder gewinnt.</p>
+            <a href="https://calendly.com/feuerabend/30min" class="btn btn-primary" target="_blank">Jetzt kostenlose Potenzialanalyse anfordern</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="impressum.html" class="footer-link">Impressum</a>
+                <a href="datenschutz.html" class="footer-link">Datenschutzhinweis</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Script -->
+    <script 
+        src="https://widgets.leadconnectorhq.com/loader.js"  
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+        data-widget-id="68a1d2bc5a3f32de8dbefa0e">
+    </script>
+
+
+    <script>
+        // Chat button functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatButton = document.getElementById('chatButton');
+            if (chatButton) {
+                chatButton.addEventListener('click', function() {
+                    // Trigger the chatbot widget
+                    if (window.leadConnector && window.leadConnector.openWidget) {
+                        window.leadConnector.openWidget();
+                    }
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>
+

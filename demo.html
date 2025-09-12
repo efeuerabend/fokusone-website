@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Zahnarztpraxis - FokusOne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Back Button -->
+    <header class="back-nav">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">FokusOne</span>
+                <span class="logo-subtitle">KI-Telefonie & Chatbots für Unternehmen</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <a href="index.html" class="btn-back" style="background: #ff6b35 !important;">Zurück zur Hauptseite</a>
+            </div>
+        </div>
+    </header>
+
+    <section style="padding: 80px 0; background: #f8f9fa;">
+        <div class="container">
+            <h1 style="text-align: center; font-size: 42px; margin-bottom: 20px;">VoiceBot Demo - Zahnarztpraxis</h1>
+            <p style="text-align: center; font-size: 18px; color: #666; margin-bottom: 60px;">
+                Erleben Sie, wie unser VoiceBot Terminanfragen in einer Zahnarztpraxis professionell bearbeitet
+            </p>
+
+            <!-- Video Demo -->
+            <div style="max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                <div style="position: relative; background: #000; border-radius: 8px; overflow: hidden; margin-bottom: 30px; cursor: pointer;" onclick="window.open('Video_Zahnarztpraxis_Empfang.mp4', '_blank')">
+                    <img src="Zahnarzt_KI.png" alt="KI-VoiceBot für Zahnarztpraxis" style="width: 100%; height: auto; display: block;">
+                    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: #ff6b35; border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);">
+                        <div style="color: white; font-size: 32px; margin-left: 4px;">▶</div>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 24px; margin-bottom: 20px; color: #333;">Was Sie in diesem Demo sehen:</h3>
+                <ul style="list-style: none; margin-bottom: 30px;">
+                    <li style="margin-bottom: 15px; color: #333; display: flex; align-items: center;">
+                        <span style="color: #ff6b35; margin-right: 10px; font-weight: bold;">✓</span>
+                        Natürliche Gesprächsführung mit Patienten
+                    </li>
+                    <li style="margin-bottom: 15px; color: #333; display: flex; align-items: center;">
+                        <span style="color: #ff6b35; margin-right: 10px; font-weight: bold;">✓</span>
+                        Automatische Terminbuchung im Praxissystem
+                    </li>
+                    <li style="margin-bottom: 15px; color: #333; display: flex; align-items: center;">
+                        <span style="color: #ff6b35; margin-right: 10px; font-weight: bold;">✓</span>
+                        Behandlungsarten und Verfügbarkeiten abfragen
+                    </li>
+                    <li style="margin-bottom: 15px; color: #333; display: flex; align-items: center;">
+                        <span style="color: #ff6b35; margin-right: 10px; font-weight: bold;">✓</span>
+                        Patientendaten abgleichen und verwalten
+                    </li>
+                    <li style="margin-bottom: 15px; color: #333; display: flex; align-items: center;">
+                        <span style="color: #ff6b35; margin-right: 10px; font-weight: bold;">✓</span>
+                        Termine priorisieren für zeitnahe Anwendungen
+                    </li>
+                </ul>
+
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+                    <h4 style="color: #333; margin-bottom: 10px;">Szenario:</h4>
+                    <p style="color: #666; line-height: 1.6;">
+                        Ein Patient ruft in der Zahnarztpraxis an und möchte einen Beratungstermin für Implantate mit einem Behandlungstermin kombinieren. 
+                        Der VoiceBot führt das Gespräch professionell, erfasst alle notwendigen Informationen und bucht den Termin 
+                        automatisch im Praxissystem.
+                    </p>
+                </div>
+
+                <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">
+                    Jetzt kostenlose Beratung vereinbaren
+                </a>
+            </div>
+
+            <!-- Features Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 60px;">
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <div style="margin-bottom: 20px;">
+                        <img src="Icon_Medizin.png" alt="Medizin" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3 style="font-size: 20px; margin-bottom: 15px; color: #333;">Medizinische Expertise</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Unser VoiceBot ist speziell für das Gesundheitswesen trainiert und versteht medizinische Fachbegriffe und Behandlungsarten.
+                    </p>
+                </div>
+
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <div style="margin-bottom: 20px;">
+                        <img src="Icon_DSGVO_konform.png" alt="DSGVO Konform" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3 style="font-size: 20px; margin-bottom: 15px; color: #333;">DSGVO-Konform</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Alle Patientendaten werden verschlüsselt übertragen und gespeichert. Vollständige Compliance mit Datenschutzbestimmungen.
+                    </p>
+                </div>
+
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <div style="margin-bottom: 20px;">
+                        <img src="Icon_Integration.png" alt="Integration" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3 style="font-size: 20px; margin-bottom: 15px; color: #333;">Sofortige Integration</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Nahtlose Anbindung an bestehende Praxissoftware und Terminverwaltungssysteme ohne komplizierte Umstellungen.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); padding: 50px; border-radius: 12px; color: white; text-align: center; margin-top: 60px;">
+                <h2 style="font-size: 32px; margin-bottom: 40px;">Zahlen aus der Praxis</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+                    <div>
+                        <div style="font-size: 48px; font-weight: bold; margin-bottom: 10px;">95%</div>
+                        <p style="font-size: 16px; opacity: 0.9;">Erfolgreiche Terminbuchungen</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; font-weight: bold; margin-bottom: 10px;">60%</div>
+                        <p style="font-size: 16px; opacity: 0.9;">Weniger Anrufe in der Praxis</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; font-weight: bold; margin-bottom: 10px;">24/7</div>
+                        <p style="font-size: 16px; opacity: 0.9;">Verfügbarkeit für Patienten</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; font-weight: bold; margin-bottom: 10px;">3 Min</div>
+                        <p style="font-size: 16px; opacity: 0.9;">Durchschnittliche Gesprächsdauer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Bereit für Ihren eigenen VoiceBot?</h2>
+            <p>Lassen Sie uns gemeinsam eine maßgeschneiderte Lösung für Ihre Praxis entwickeln.</p>
+            <a href="https://calendly.com/feuerabend/30min" class="btn btn-primary" target="_blank">Kostenlose Beratung vereinbaren</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="impressum.html" class="footer-link">Impressum</a>
+                <a href="datenschutz.html" class="footer-link">Datenschutzhinweis</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Script -->
+    <script 
+        src="https://widgets.leadconnectorhq.com/loader.js"  
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+        data-widget-id="68a1d2bc5a3f32de8dbefa0e">
+    </script>
+
+
+    <script>
+        // Chat button functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatButton = document.getElementById('chatButton');
+            if (chatButton) {
+                chatButton.addEventListener('click', function() {
+                    // Trigger the chatbot widget
+                    if (window.leadConnector && window.leadConnector.openWidget) {
+                        window.leadConnector.openWidget();
+                    }
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>
+
